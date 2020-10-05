@@ -1,0 +1,118 @@
+/* landing-page */
+
+html {
+  font-size: 62.5%;
+}
+
+#landing-page {
+  height: 900px;
+  background-image: url(./assets/bg-main.png);
+  background-size: cover;
+  background-position: center center;
+  min-width: 1300px;
+}
+
+.header-top {
+  padding-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-top a {
+  color: white;
+  font-size: 1.4rem;
+  margin-right: 40px;
+}
+
+.header-top a:last-child {
+  margin-right: 0;
+}
+
+.header-top a:hover {
+  text-decoration: underline;
+}
+
+.header-bottom {
+  display: flex;
+  margin-top: 30px;
+}
+
+.header-logo {
+  display: block;
+  margin-right: 50px;
+}
+
+.header-logo img {
+  width: 180px;
+}
+
+.header-bottom {
+  position: relative;
+}
+
+.header-bottom ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-bottom button {
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 35px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.header-bottom button:hover,
+.header-bottom button:focus {
+  color: #fff584;
+}
+
+.header-bottom .header-dropmenu-box {
+  width: 1025px;
+}
+
+.header-dropmenu-content {
+  width: 1200px;
+  display: none;
+}
+
+.header-dropmenu-content p {
+  margin-right: 150px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.header-dropmenu-content li {
+  margin-right: 40px;
+}
+
+.header-dropmenu-content a {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.header-dropmenu-content a:hover {
+  text-decoration: underline;
+  color: #fff584;
+}
+
+.show {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+}
+
+/* fix container width*/
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 1234px !important;
+    margin: 0 auto;
+  }
+}
