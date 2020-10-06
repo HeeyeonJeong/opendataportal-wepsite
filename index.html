@@ -17,7 +17,7 @@
     <!-- landing-page -->
     <section id="landing-page">
       <div class="container">
-        <!-- header -->
+        <!-- header-section -->
         <header>
           <div class="header-top">
             <a href="#">목록등록관리시스템</a>
@@ -105,6 +105,103 @@
             </nav>
           </div>
         </header>
+
+        <!-- main-section-contents -->
+        <main>
+          <div class="container">
+            <div class="main-contents">
+              <div class="main-search-box">
+                <div class="main-search">
+                  <input
+                    type="text"
+                    placeholder="어떤 공공데이터를 찾으시나요?"
+                  />
+                  <button type="submit" aria-label="검색"></button>
+                </div>
+                <h2 class="main-search-ranking-title">인기검색어</h2>
+                <div class="main-search-ranking">
+                  <button
+                    type="button"
+                    class="js-rankingButton rankingButton"
+                    aria-label="인기검색어 펼치기"
+                  ></button>
+                  <ul>
+                    <li><a href="#">1. 코로나</a></li>
+                    <li><a href="#">2. 건강검진</a></li>
+                    <li>
+                      <a href="#">3. 한국가스공사_월별 천연가스 생산량</a>
+                    </li>
+                    <li><a href="#">4. 지하철</a></li>
+                    <li><a href="#">5. 미세먼지</a></li>
+                    <li>인기검색어 닫기</li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <label for="search-condition">
+                    검색조건
+                    <button type="button">
+                      <!-- reset image가져오기 -->
+                    </button>
+                  </label>
+                  <select id="search-condition" name="condition">
+                    <option value="" hidden selected disabled>분류체계</option>
+                    <option value="공공행정">공공행정</option>
+                    <option value="과학기술">과학기술</option>
+                    <option value="교육">교육</option>
+                    <option value="교통물류">교통물류</option>
+                    <option value="국토관리">국토관리</option>
+                    <option value="농축수산">농축수산</option>
+                    <option value="문화관광">문화관광</option>
+                    <option value="법률">법률</option>
+                    <option value="보건의료">보건의료</option>
+                    <option value="사회복지">사회복지</option>
+                    <option value="산업고용">산업고용</option>
+                    <option value="식품건강">식품건강</option>
+                    <option value="재난안전">재난안전</option>
+                    <option value="재정금융">재정금융</option>
+                    <option value="통일외교안보">통일외교안보</option>
+                    <option value="환경기상">환경기상</option>
+                  </select>
+                  <select id="search-condition" name="condition">
+                    <option value="" hidden selected disabled>
+                      서비스유형
+                    </option>
+                    <option value="LINK">LINK</option>
+                    <option value="LOD">LOD</option>
+                    <option value="REST">REST</option>
+                    <option value="ASS/ATOM">ASS/ATOM</option>
+                    <option value="SOAP">SOAP</option>
+                    <option value="다운로드">다운로드</option>
+                    <option value="배송 및 기타">배송 및 기타</option>
+                  </select>
+                  <select id="search-condition" name="condition">
+                    <option value="" hidden selected disabled>확장자</option>
+                    <option value="CSV">CSV</option>
+                    <option value="DOCX">DOCX</option>
+                    <option value="HWP">HWP</option>
+                    <option value="JPG">JPG</option>
+                    <option value="JSON">JSON</option>
+                    <option value="LINK">LINK</option>
+                    <option value="MP4">MP4</option>
+                    <option value="PDF">PDF</option>
+                    <option value="SHP">SHP</option>
+                    <option value="TXT">TXT</option>
+                    <option value="XLS">XLS</option>
+                    <option value="XLSX">XLSX</option>
+                    <option value="XML">XML</option>
+                    <option value="ZIP">ZIP</option>
+                  </select>
+                </div>
+                <div>
+                  <span>검색도움말</span>
+                  <span>콘텐츠 바로가기</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
     </section>
     <script
