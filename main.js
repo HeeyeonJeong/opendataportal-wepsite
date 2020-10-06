@@ -18,3 +18,27 @@ function closeDropMenu(e) {
     }
   }
 }
+
+//main search ranking slide
+const rankingBtn = document.querySelector(".js-rankingButton");
+
+let rankingList = [
+  "1. 코로나",
+  "2. 건강검진",
+  "3. 한국가스공사_월별 천연가스 생산량",
+  "4. 지하철",
+  "5. 미세먼지",
+];
+
+var i = 0;
+var interval = setInterval(function () {
+  if (i > 4) {
+    i = 0;
+  }
+  rankingBtn.innerHTML = rankingList[i];
+  i++;
+}, 2000);
+
+setTimeout(function () {
+  clearInterval(interval);
+}, 60000);
